@@ -1,0 +1,162 @@
+{
+  "threads": 5,
+  "Computers" : [
+    {
+      "Type":"A",
+      "Sig Success": "1",
+      "Sig Fail": "0"
+    },
+    {
+      "Type":"B",
+      "Sig Success": "2",
+      "Sig Fail": "-1"
+    }
+  ],
+  "Phase 1": [
+    {
+      "Action": "Open Course",
+      "Department": "CS",
+      "Course": "a",
+      "Space": "1",
+      "Prerequisites": []
+    },
+    {
+      "Action": "Open Course",
+      "Department": "CS",
+      "Course": "b",
+      "Space": "10",
+      "Prerequisites": ["a"]
+    },
+    {
+      "Action": "Open Course",
+      "Department": "CS",
+      "Course": "c",
+      "Space": "10",
+      "Prerequisites": []
+    },
+    {
+      "Action": "Open Course",
+      "Department": "CS",
+      "Course": "d",
+      "Space": "1",
+      "Prerequisites": []
+    },
+    {
+      "Action": "Open Course",
+      "Department": "CS",
+      "Course": "e",
+      "Space": "10",
+      "Prerequisites": ["d"]
+    },
+    {
+      "Action": "Add Student",
+      "Department": "CS",
+      "Student": "1"
+    },
+    {
+      "Action": "Add Student",
+      "Department": "CS",
+      "Student": "2"
+    },
+    {
+      "Action": "Add Student",
+      "Department": "CS",
+      "Student": "3"
+    },
+    {
+      "Action": "Add Student",
+      "Department": "CS",
+      "Student": "4"
+    },
+    {
+      "Action": "Add Student",
+      "Department": "CS",
+      "Student": "5"
+    }
+  ],
+  "Phase 2": [
+    {
+      "Action": "Participate In Course",
+      "Student": "1",
+      "Course": "a",
+      "Grade": ["77"]
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "3",
+      "Course": "a",
+      "Grade": ["45"]
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "3",
+      "Course": "b",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "2",
+      "Course": "b",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "2",
+      "Course": "c",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Close Course",
+      "Course": "e",
+      "Department": "CS"
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "3",
+      "Course": "d",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Add Spaces",
+      "Course":"d",
+      "Number":"1"
+    }
+  ],
+  "Phase 3": [
+    {
+      "Action": "Participate In Course",
+      "Student": "1",
+      "Course": "b",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Unregister",
+      "Student": "2",
+      "Course": "c"
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "3",
+      "Course": "e",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "4",
+      "Course": "d",
+      "Grade": ["-"]
+    },
+    {
+      "Action": "Participate In Course",
+      "Student": "4",
+      "Course": "e",
+      "Grade": ["-"]
+    },
+    {
+      "Action" : "Register With Preferences",
+      "Preferences": ["d","e","c"],
+      "Grade": ["-","-","-","-"],
+      "Student": "5"
+    }
+  ]
+}

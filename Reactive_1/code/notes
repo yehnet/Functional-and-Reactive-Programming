@@ -1,0 +1,23 @@
+how to use maven:
+    mvn compile exec:java -D"exec.mainClass"="bgu.atd.a1.sim.Simulator"
+
+1. should we stop thread in the middle of a task or just prevent submitting more task to pool
+2. if I need to parse the json in start how do i know how many threads to have in the pool?
+3. I added pool as protected variable in Action, how it will work if the replace the pool implementation with their implementation?
+
+1.should we check prequisites with grade greater than 56? 
+2.ActorThreadpool uses ActorThread, they might change to their ActorThreadpool, is it ok?
+3.in sendmessage, should we always send new privatestate? 
+4.action.handle() execute the action only once?  
+
+Error I had:
+tudent],
+1 = bgu.atd.a1.sim.privateStates.StudentPrivateState@1761e840,
+2 = bgu.atd.a1.sim.privateStates.StudentPrivateState@6c629d6e,
+3 = bgu.atd.a1.sim.privateStates.StudentPrivateState@5ecddf8f,
+SPL = [1]       [Student attend to course]}java.util.NoSuchElementException
+
+        at java.base/java.util.AbstractQueue.remove(AbstractQueue.java:117)
+        at bgu.atd.a1.Actor.get_task(Actor.java:29)
+        at bgu.atd.a1.ActorThread.run(ActorThread.java:27)
+        at java.base/java.lang.Thread.run(Thread.java:834)

@@ -1,0 +1,108 @@
+{
+  "Departments": [
+    {
+      "Department": "CS",
+      "studentList": [
+        "123456789",
+        "5959595959"
+      ],
+      "courseList": [
+        "Intro To CS",
+        "SPL",
+        "Data Structures"
+      ],
+      "actions": [
+        "Add Student",
+        "Open Course",
+        "Open Course",
+        "Open Course",
+        "Add Student",
+        "Administrative Check"
+      ]
+    },
+    {
+      "Department": "Math",
+      "studentList": [
+        "132424353"
+      ],
+      "courseList": [],
+      "actions": [
+        "Add Student"
+      ]
+    }
+  ],
+  "Courses": [
+    {
+      "availableSpots": 100,
+      "registered": 0,
+      "prequisites": [
+        "Intro To CS"
+      ],
+      "regStudents": [],
+      "Course": "Data Structures",
+      "actions": [
+        "Participate In Course",
+        "Unregister"
+      ]
+    },
+    {
+      "availableSpots": 198,
+      "registered": 2,
+      "prequisites": [],
+      "regStudents": [
+        "123456789",
+        "5959595959"
+      ],
+      "Course": "Intro To CS",
+      "actions": [
+        "Participate In Course",
+        "Participate In Course"
+      ]
+    },
+    {
+      "availableSpots": 0,
+      "registered": 1,
+      "prequisites": [
+        "Intro To CS"
+      ],
+      "regStudents": [
+        "123456789"
+      ],
+      "Course": "SPL",
+      "actions": [
+        "Participate In Course",
+        "Participate In Course"
+      ]
+    }
+  ],
+  "Students": [
+    {
+      "signature": 999283,
+      "grades": {
+        "Intro To CS": 77,
+        "SPL": 98
+      },
+      "Student": "123456789",
+      "actions": [
+        "Intro To CS",
+        "SPL"
+      ]
+    },
+    {
+      "signature": 0,
+      "grades": {},
+      "Student": "132424353",
+      "actions": []
+    },
+    {
+      "signature": 999283,
+      "grades": {
+        "Intro To CS": 94
+      },
+      "Student": "5959595959",
+      "actions": [
+        "Intro To CS"
+      ]
+    }
+  ]
+}
